@@ -1,0 +1,4182 @@
+------------------------ RELEASE REPORT ------------------------
+
+System Health Summary
+----- NODE 01 -----
+     Firmware: 1.09.0088 (checksum 2471523302)
+Expansion dev: [04060] Serial expansion board, firmware ver:'01.01.0000'
+  Reset count: 512 (watchdog: 170)
+    Boot time: Nov 21, 2018 18:23:58 (last shutdown: User - Menu reset)
+ Current time: Nov 23, 2018 17:26:58
+Configuration: checksum 986709997
+          RAM: 629172/1096224 bytes available
+       EEPROM: 16936 bytes free
+        Power: 14.41V/0.0415A (0.598W) [min/max 14.35V/14.52V]
+      Battery: 2.83V
+  Temperature: 8.4C
+   Services/s: 150 [min 53, avg 140]
+ Comms buffer: 0/45000 bytes used
+  Log Manager: 0/15000 bytes used
+  Datalogging: Current Hour Writes = 52 Last Hour Writes = 102 Errors = 0 (none)
+
+Slot | Device Handler Name
+-----+----------------------
+00   | WatchMan500 Node Manager
+02   | GPS Handler
+03   | Analog Humidity and Air Temperature
+05   | Multitech iCell 100 Device Handler
+06   | Wetlabs WQM
+09   | ADC Input
+15   | Generic Datalogger
+16   | Generic Datalogger
+18   | TRIAXYS OEM
+19   | Compass
+20   | Pulse Anemometer
+21   | PTB100
+22   | Nortek ADCP
+
+
+*************** SUMMARY ***************
+Node ID : 1
+Serial Number : 520b001e45259081
+Firmware Version : 1.09.0088
+OS Version : 2.0.050628.0002
+Project Name : 424027 -  1.28
+Compile Time : Apr 24, 2018 - 18:24:21
+Expansion Device : [04060] Serial expansion board, firmware ver:'01.01.0000'
+
+****** INSTALLED DEVICE HANDLERS ******
+DeviceHandlerID - Description                Revision  Checksum
+----------------------------------------------------------------
+>  0:-WatchMan500 Node Manager                3.41.01   aac568ed
+>  1:-ADC Input                               2.13.00   a9ee765e
+>  2:-Generic Serial Handler                  1.13.01   7c257125
+>  3:-FET                                     1.03.00   9054f1c7
+>  4:-DIO                                     1.05.00   6eea533c
+> 11:-GPS Handler                             3.29.00   c061c278
+> 12:-PTB2x0                                  2.16.01   09057bd6
+> 14:-Analog Humidity and Air Temperature     4.01.02   e983279f
+> 16:-Compass                                 2.13.00   326fc991
+> 17:-Pulse Anemometer                        4.32.00   6b5b6f71
+> 22:-TRIAXYS OEM                             1.18.04   fbb6f286
+> 25:-Inmarsat DMR-200 terminal               1.19.00   88aa0827
+> 27:-Serial Anemometer                       4.32.00   6b5b6f71
+> 29:-PTB100                                  1.10.01   4c68b236
+> 41:-Binary Message Builder                  2.11.00   13918dc9
+> 44:-Generic Datalogger                      1.27.05   6c46d595
+> 48:-Action Script Utility Handler           1.06.00   83eb8fe8
+> 54:-Water Intrusion Sensor                  1.11.00   33c17a0a
+> 61:-Math Utility                            1.10.00   02c534c0
+> 63:-Nortek ADCP                             1.22.01   4ea19993
+> 67:-Wetlabs WQM                             1.07.00   e8145773
+> 68:-Airlink Pinpoint CDMA Modem             1.05.00   cee3b08c
+> 93:-Switched Power Timed                    1.07.00   9871eab4
+>102:-SUNA                                    1.03.00   9e2f704c
+>112:-Generic Comms Device Handler            1.08.00   56151a19
+>116:-Cycle Phosphate                         1.02.00   c163caf9
+>125:-Parani SD100/SD1000 Bluetooth Adapter   1.03.00   040b1298
+>137:-Tagreader / Receiver                    1.03.00   ffeb0755
+>142:-CT JFE                                  1.01.00   7688aaa5
+>155:-Watchman500 Test Centre                 1.09.02   6c8648bb
+>158:-ISatData Pro Terminal                   1.02.04   9204ba6c
+>159:-GPS Generic                             1.15.00   837d3cc3
+>164:-MESSAGE_AIS_METHYDRO                    1.02.01   ee05a7d1
+>169:-TRIAXYS G3 Wave Sensor                  1.03.01   fb0f2794
+>178:-Multitech iCell 100 Device Handler      1.02.01   e01b4391
+
+****** COMPLETE HARDWARE LIST ******
+HWID Name                    Instance# SlotID                 Enabled
+----------------------------------------------------------------------
+> 0  RESERVED                0         NA                     0
+> 1  ADC INPUT               0         J4-2                   1
+> 2  ADC INPUT               1         J4-4                   1
+> 3  ADC INPUT               2         J3-2                   1
+> 4  ADC INPUT               3         J11-20                 1
+> 5  ADC INPUT               4         J11-2                  1
+> 6  ADC INPUT               5         J11-1                  1
+> 7  ADC INPUT               6         J11-3                  1
+> 8  ADC INPUT               7         J11-6                  1
+> 9  ADC INPUT               8         J11-8                  1
+>10  ADC INPUT               9         J11-7                  1
+>11  ADC INPUT               10        J11-9                  1
+>12  ADC INPUT               11        J11-12                 1
+>13  ADC INPUT               12        J11-14                 1
+>14  ADC INPUT               13        J11-13                 1
+>15  ADC INPUT               14        J11-15                 1
+>16  ADC INPUT               15        J11-18                 1
+>17  ADC INPUT               16        BAROOut                1
+>18  ADC INPUT               17        BARO5V                 1
+>19  TIMER CAPTURE INPUT     0         J3-4                   1
+>20  TIMER CAPTURE INPUT     1         J11-21                 1
+>21  SWITCHED POWER OUTPUT   0         J5-1                   1
+>22  SWITCHED POWER OUTPUT   1         J8-1                   1
+>23  SWITCHED POWER OUTPUT   2         J9-1                   1
+>24  SWITCHED POWER OUTPUT   3         J10-1                  1
+>25  SWITCHED POWER OUTPUT   4         J4-1                   1
+>26  DIGITAL IO              0         J11-34                 1
+>27  DIGITAL IO              1         J11-33                 1
+>28  DIGITAL IO              2         J11-32                 1
+>29  DIGITAL IO              3         J11-31                 1
+>30  DIGITAL IO              4         J11-30                 1
+>31  DIGITAL IO              5         J11-29                 1
+>32  DIGITAL IO              6         J11-28                 1
+>33  DIGITAL IO              7         J11-27                 1
+>34  SERIAL RS232 IO         0         J5-RX2 TX4             1
+>35  SERIAL RS232 IO         1         J8-RX2 TX4             1
+>36  SERIAL RS232 IO         2         J9-RX2 TX4             1
+>37  SERIAL RS232 IO         3         J10-RX2 TX4 | J1-MDM   0
+>38  SERIAL RS232 IO         3         J1-MODEM               1
+>39  SERIAL RS485 IO         2         J9-A2 B4               0
+>40  SERIAL RS485 IO         4         J10-A2 B4              1
+>41  SDI-12 IO               4         J11-24                 0
+>42  SDI-12 IO               4         J11-24                 0
+>43  SDI-12 IO               4         J11-24                 0
+>44  SDI-12 IO               4         J11-24                 0
+>45  SDI-12 IO               4         J11-24                 0
+>46  SDI-12 IO               4         J11-24                 0
+>47  SDI-12 IO               4         J11-24                 0
+>48  SDI-12 IO               4         J11-24                 0
+>49  SDI-12 IO               4         J11-24                 0
+>50  SDI-12 IO               4         J11-24                 0
+>51  DAC OUTPUT              0         J3-1                   1
+>52  DAC OUTPUT              1         J11-19                 1
+>53  ADC INPUT               18        DAC0                   1
+>54  ADC INPUT               19        DAC1                   1
+>55  ADC INPUT               20        COMMON                 1
+>56  ADC INPUT               21        PCBTEMP                1
+>57  ADC INPUT               22        VIN_I                  1
+>58  ADC INPUT               23        VIN_V                  1
+>59  ADC INPUT               24        3V3EXT_I               1
+>60  ADC INPUT               25        VSW0_I                 1
+>61  ADC INPUT               26        VSW1_I                 1
+>62  ADC INPUT               27        VSW2_I                 1
+>63  ADC INPUT               28        VSW3_I                 1
+>64  ADC INPUT               33        AIEXP0                 1
+>65  ADC INPUT               34        AIEXP1                 1
+>66  ADC INPUT               35        VBATT_V                1
+>67  EXP_CPLD_COUNTER_INPUT  0         EJ3-1                  0
+>68  EXP_CPLD_COUNTER_INPUT  1         EJ3-2                  0
+>69  EXP_CPLD_COUNTER_INPUT  2         EJ3-4                  0
+>70  EXP_CPLD_COUNTER_INPUT  3         EJ4-1                  0
+>71  EXP_CPLD_COUNTER_INPUT  4         EJ4-2                  0
+>72  EXP_CPLD_COUNTER_INPUT  5         EJ4-4                  0
+>73  EXP_CPLD_COUNTER_INPUT  6         EJ5-1                  0
+>74  EXP_CPLD_COUNTER_INPUT  7         EJ8-1                  0
+>75  EXP_CPLD_COUNTER_INPUT  8         EJ8-2                  0
+>76  EXP_CPLD_COUNTER_INPUT  9         EJ8-4                  0
+>77  EXP_CPLD_COUNTER_INPUT  10        EJ9-1                  0
+>78  EXP_CPLD_COUNTER_INPUT  11        EJ9-2                  0
+>79  EXP_CPLD_COUNTER_INPUT  12        EJ9-4                  0
+>80  EXP_CPLD_COUNTER_INPUT  13        EJ10-4                 0
+>81  SWITCHED POWER OUTPUT   5         EJ5-2                  0
+>82  SWITCHED POWER OUTPUT   6         EJ5-4                  0
+>83  SWITCHED POWER OUTPUT   7         EJ10-1                 0
+>84  SWITCHED POWER OUTPUT   8         EJ10-2                 0
+>85  SWITCHED POWER OUTPUT   9         EXP MODEM POWER        0
+>86  SWITCHED POWER OUTPUT   10        EXP CF POWER           0
+>87  COMPACT_FLASH           0         EJ7                    0
+>88  MODEM                   0         EJ1 EJ11               0
+>89  SERIAL RS232 IO         5         EJ3-RX2 TX4            1
+>90  SERIAL RS232 IO         6         EJ4-RX2 TX4            1
+>91  SERIAL RS232 IO         7         EJ5-RX2 TX4 | EJ2      1
+>92  SERIAL RS232 IO         8         EJ8-RX2 TX4            1
+>93  SERIAL RS232 IO         9         EJ9-RX2 TX4            1
+>94  SERIAL RS232 IO         10        EJ10-RX2 TX4 | EJ1     1
+>95  SWITCHED POWER OUTPUT   5         EJ3-1                  1
+>96  SWITCHED POWER OUTPUT   6         EJ4-1                  1
+>97  SWITCHED POWER OUTPUT   7         EJ5-1                  1
+>98  SWITCHED POWER OUTPUT   8         EJ8-1                  1
+>99  SWITCHED POWER OUTPUT   9         EJ9-1                  1
+>100  SWITCHED POWER OUTPUT   10        EJ10-1                 1
+>101  ADC INPUT               36        EJ3-1_I                1
+>102  ADC INPUT               37        EJ4-1_I                1
+>103  ADC INPUT               38        EJ5-1_I                1
+>104  ADC INPUT               39        EJ8-1_I                1
+>105  ADC INPUT               40        EJ9-1_I                1
+>106  ADC INPUT               41        EJ10-1_I               1
+
+******** MAPPED DEVICE HANDLERS *******
+
+>SlotID: DeviceHandlerID-Description-Revision
+  ->HWTypeID - HWTypeName              | HW Description
+    Mapped HWID                        | Connector
+---------------------------------------+-----------
+> 0:  0-WatchMan500 Node Manager-3.41.01   
+  -> 0 TYPE: 5 - SERIAL RS232 IO       | DESCRIPTION: Diagnostics Port
+      OPTIONAL MAPPING :HWID =  34     | CONNECTOR: J5-RX2 TX4     
+  -> 1 TYPE: 4 - DIGITAL IO            | DESCRIPTION: External Reset DIO
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+  -> 2 TYPE: 4 - DIGITAL IO            | DESCRIPTION: External Shutdown DIO
+      OPTIONAL MAPPING :HWID =  33     | CONNECTOR: J11-27         
+---------------------------------------+-----------
+> 2: 11-GPS Handler         -3.29.00   
+  -> 0 TYPE: 5 - SERIAL RS232 IO       | DESCRIPTION: RS-232 Port
+      OPTIONAL MAPPING :HWID =  36     | CONNECTOR: J9-RX2 TX4     
+  -> 1 TYPE: 3 - SWITCHED POWER OUTPUT | DESCRIPTION: Switched Power Output
+      OPTIONAL MAPPING :HWID =  23     | CONNECTOR: J9-1           
+---------------------------------------+-----------
+> 3: 14-Analog Humidity and Air Temperature-4.01.02   
+  -> 0 TYPE: 1 - ADC INPUT             | DESCRIPTION: Temperature ADC Input
+      REQUIRED MAPPING :HWID =   1     | CONNECTOR: J4-2           
+  -> 1 TYPE: 1 - ADC INPUT             | DESCRIPTION: Humidity ADC Input
+      REQUIRED MAPPING :HWID =   2     | CONNECTOR: J4-4           
+  -> 2 TYPE: 3 - SWITCHED POWER OUTPUT | DESCRIPTION: Switched Power Output
+      OPTIONAL MAPPING :HWID =  25     | CONNECTOR: J4-1           
+  -> 3 TYPE: 4 - DIGITAL IO            | DESCRIPTION: Power Control - RH
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+  -> 4 TYPE: 8 - DAC OUTPUT            | DESCRIPTION: Reference Voltage - AT
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+---------------------------------------+-----------
+> 5: 178-Multitech iCell 100 Device Handler-1.02.01   
+  -> 0 TYPE: 5 - SERIAL RS232 IO       | DESCRIPTION: RS-232 Port
+      REQUIRED MAPPING :HWID =  38     | CONNECTOR: J1-MODEM       
+  -> 1 TYPE: 3 - SWITCHED POWER OUTPUT | DESCRIPTION: Switched Power Output
+      OPTIONAL MAPPING :HWID =  24     | CONNECTOR: J10-1          
+  -> 2 TYPE: 4 - DIGITAL IO            | DESCRIPTION: Power Control - Set
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+  -> 3 TYPE: 4 - DIGITAL IO            | DESCRIPTION: Power Control - Reset
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+  -> 4 TYPE: 4 - DIGITAL IO            | DESCRIPTION: Digital IO Power
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+  -> 5 TYPE: 3 - SWITCHED POWER OUTPUT | DESCRIPTION: Programming Enable FET
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+---------------------------------------+-----------
+> 6: 67-Wetlabs WQM         -1.07.00   
+  -> 0 TYPE: 5 - SERIAL RS232 IO       | DESCRIPTION: RS-232 Port
+      REQUIRED MAPPING :HWID =  35     | CONNECTOR: J8-RX2 TX4     
+  -> 1 TYPE: 3 - SWITCHED POWER OUTPUT | DESCRIPTION: Switched Power Output
+      OPTIONAL MAPPING :HWID =  22     | CONNECTOR: J8-1           
+---------------------------------------+-----------
+> 9:  1-ADC Input           -2.13.00   
+  -> 0 TYPE: 1 - ADC INPUT             | DESCRIPTION: ADC Input Channel 1
+      REQUIRED MAPPING :HWID =   9     | CONNECTOR: J11-8          
+  -> 1 TYPE: 1 - ADC INPUT             | DESCRIPTION: ADC Input Channel 2(Common if not mapped)
+      OPTIONAL MAPPING :HWID =  10     | CONNECTOR: J11-7          
+  -> 2 TYPE: 3 - SWITCHED POWER OUTPUT | DESCRIPTION: Switched Power Output
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+  -> 3 TYPE: 4 - DIGITAL IO            | DESCRIPTION: Power Control - Set
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+  -> 4 TYPE: 4 - DIGITAL IO            | DESCRIPTION: Power Control - Reset
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+---------------------------------------+-----------
+>15: 44-Generic Datalogger  -1.27.05   
+---------------------------------------+-----------
+>16: 44-Generic Datalogger  -1.27.05   
+---------------------------------------+-----------
+>18: 22-TRIAXYS OEM         -1.18.04   
+  -> 0 TYPE: 5 - SERIAL RS232 IO       | DESCRIPTION: RS-232 Port
+      REQUIRED MAPPING :HWID =  92     | CONNECTOR: EJ8-RX2 TX4    
+  -> 1 TYPE: 3 - SWITCHED POWER OUTPUT | DESCRIPTION: Switched Power Output
+      OPTIONAL MAPPING :HWID =  98     | CONNECTOR: EJ8-1          
+  -> 2 TYPE: 4 - DIGITAL IO            | DESCRIPTION: Power Set
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+  -> 3 TYPE: 4 - DIGITAL IO            | DESCRIPTION: Power Reset
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+---------------------------------------+-----------
+>19: 16-Compass             -2.13.00   
+  -> 0 TYPE: 5 - SERIAL RS232 IO       | DESCRIPTION: RS-232 Port
+      REQUIRED MAPPING :HWID =  91     | CONNECTOR: EJ5-RX2 TX4 | EJ2
+  -> 1 TYPE: 3 - SWITCHED POWER OUTPUT | DESCRIPTION: Switched Power Output
+      OPTIONAL MAPPING :HWID =  97     | CONNECTOR: EJ5-1          
+---------------------------------------+-----------
+>20: 17-Pulse Anemometer    -4.32.00   
+  -> 0 TYPE: 1 - ADC INPUT             | DESCRIPTION: Direction ADC In
+      REQUIRED MAPPING :HWID =   3     | CONNECTOR: J3-2           
+  -> 1 TYPE: 2 - TIMER CAPTURE INPUT   | DESCRIPTION: Wind Pulse Input
+      REQUIRED MAPPING :HWID =  19     | CONNECTOR: J3-4           
+  -> 2 TYPE: 8 - DAC OUTPUT            | DESCRIPTION: DAC 1 - VRef
+      REQUIRED MAPPING :HWID =  51     | CONNECTOR: J3-1           
+  -> 3 TYPE: 8 - DAC OUTPUT            | DESCRIPTION: DAC 2 - VRef
+      OPTIONAL MAPPING :NOT MAPPED     | CONNECTOR: NOT MAPPED
+---------------------------------------+-----------
+>21: 29-PTB100              -1.10.01   
+  -> 0 TYPE: 1 - ADC INPUT             | DESCRIPTION: ADC Input
+      REQUIRED MAPPING :HWID =   4     | CONNECTOR: J11-20         
+  -> 1 TYPE: 3 - SWITCHED POWER OUTPUT | DESCRIPTION: Switched Power Output
+      OPTIONAL MAPPING :HWID =  96     | CONNECTOR: EJ4-1          
+---------------------------------------+-----------
+>22: 63-Nortek ADCP         -1.22.01   
+  -> 0 TYPE: 5 - SERIAL RS232 IO       | DESCRIPTION: RS-232 Port
+      REQUIRED MAPPING :HWID =  93     | CONNECTOR: EJ9-RX2 TX4    
+  -> 1 TYPE: 3 - SWITCHED POWER OUTPUT | DESCRIPTION: Switched Power Output
+      OPTIONAL MAPPING :HWID =  99     | CONNECTOR: EJ9-1          
+---------------------------------------+-----------
+
+********* SYSTEM CONFIGURATION ********
+Device 0: WatchMan500 System Manager (64 parameters)
+ 1)                    System View,Log Level: 3,3
+ 2)                              System Name: NexSens CB-1250
+ 3)                        System Owner Name: NOAA Chesapeake Bay Office
+ 4)                            Location Name: Annapolis MD USA
+ 5)                         System Type Name: Data Acquisition System
+ 6)                      User System ID Name: CB1250-003
+ 7)            User System Superstructure ID: ---ENC002---
+ 8)     User Interface Mode Inactive Timeout: 300
+ 9)                                Reserved1: 0
+10)                                Reserved2: 0
+11)                                Reserved3: 0
+12)       System Sampling Interval (seconds): 360
+13)       System Sampling Duration (seconds): 360
+14)         System Sampling Offset (seconds): 0
+15)                     System Sleep Enabled: 0
+16)       System Sleep Minimum Time(seconds): 60
+17) System Wake Before Sampling Time(seconds): 30
+18)                                Reserved4: 0
+19)                                Reserved5: 0
+20) System Action Script Min Time Before Next Sample: 30
+21)  System Monitor Processing Complete List: 2,10
+22) System Monitor Processing Complete Action Script: 0
+23)                                Reserved6: 0
+24)                                Reserved7: 0
+25)                                Reserved8: 0
+26)                                Reserved9: 0
+27)                               Reserved10: 0
+28)                               Reserved11: 0
+29)                               Reserved12: 0
+30)                               Reserved13: 0
+31)                               Reserved14: 0
+32)                               Reserved15: 0
+33)                               Reserved16: 0
+34)                               Reserved17: 0
+35)                               Reserved18: 0
+36)                               Reserved19: 0
+37)                               Reserved20: 0
+38)                               Reserved21: 0
+39)                               Reserved22: 0
+40)                               Reserved23: 0
+41)                     Sync Times Direction: 0
+42)                      Sync Times Interval: 0
+43)                        Sync Times Offset: 0
+44)      Command Interpreter Hotkeys Enabled: 1
+45)                    Low Voltage Threshold: 10.5
+46)                Low Voltage Action Script: D120:S43200
+47)                  Log Manager Buffer Size: 15000
+48)           External Sleep Request Enabled: 0
+49)       Timed System Action Script Enabled: 0
+50)  System Action Script Interval (seconds): 3600
+51)    System Action Script Offset (seconds): 0
+52)      Low/High Voltage Reference Location: 1,0,62
+53)                   High Voltage Threshold: 19.6
+54)               High Voltage Action Script: 
+55)                External Shutdown Enabled: 1
+56)                External Shutdown Timeout: 300
+57)                    Ignore NMEA Checksums: 0
+58)                       Time Sync Interval: 3600
+59)                        Time Sync Timeout: 180
+60)                         Time Sync Offset: 300
+61)      Time Synchronization Device Mapping: 
+62)                    Time Sync Max Retries: 3
+63)                Enable Diagnostic Viewing: 1
+64)                Enable Diagnostic Logging: 0
+
+***** DEVICE HANDLER CONFIGURATION ****
+Device 0: WatchMan500 Node Manager (10 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 3,3
+ 3)               Use System Sampling Values: 1
+ 4)              Sampling Interval (seconds): 360
+ 5)              Sampling Duration (seconds): 360
+ 6)                Sampling Offset (seconds): 0
+ 7)     Minimum number of averaging elements: 1
+ 8)                                Reserved0: 0
+ 9)             ADC Calibration Enable State: 1
+10)                              PUCK Enable: 0
+
+Device 2: GPS Handler (27 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 0,5
+ 3) Use System Sampling Settings for Watchcircle: 0
+ 4)                                Reserved1: 0
+ 5)                                Reserved2: 0
+ 6)                                Reserved3: 0
+ 7)                                Reserved4: 0
+ 8)            System Time Sync Enabled Flag: 1
+ 9)        System Time Sync Interval Seconds: 86400
+10)          System Time Sync Offset Seconds: 0
+11)            System Time Sync On Boot Flag: 0
+12)            GPS Acquire Timeout (seconds): 300
+13)            GPS Off when not setting time: 1
+14)                                Reserved5: 0
+15)              External GPS Install String: 
+16)                  Watchcircle Enable Flag: 1
+17)    Watchcircle Update Interval (seconds): 360
+18)      Watchcircle Update Offset (seconds): 120
+19)   Watchcircle Off Position Action Script: 
+20)                          Center Latitude: 
+21)                         Center Longitude: 
+22)                   Watchcircle Radius (m): 1000
+23) Obtain Center Mode (0-manual, 1-delay (after next reboot)): 0
+24)               Obtain Delay Time (HHMMSS): 1
+25) Absolute Watchcircle Obtain Time (should be 0 unless setting a fixed time): 0
+26)          Power Off GPS when fix acquired: 1
+27)                              Time Source: 0
+
+Device 3: Analog Humidity and Air Temperature (20 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 3,3
+ 3)             Use System Sampling Settings: 0
+ 4)                    Sampling Interval (s): 360
+ 5)                    Sampling Duration (s): 120
+ 6)                      Sampling Offset (s): 0
+ 7)     Minimum Number of Averaging Elements: 0
+ 8)                          AT&H Model Type: 2
+ 9)                        Sensor Height (m): 0
+10)                                AT_Offset: 0
+11)                                 AT_Scale: 1
+12)                                RH_Offset: 0
+13)                                 RH_Scale: 1
+14)                Temperature Buffer Enable: 1
+15)                   Humidity Buffer Enable: 1
+16)            Minimum Temperature Threshold: -45
+17)            Maximum Temperature Threshold: 150
+18)               Minimum Humidity Threshold: 0
+19)               Maximum Humidity Threshold: 110
+20)                            Over Ice Flag: 0
+
+Device 5: Multitech iCell 100 Device Handler (24 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 3,3
+ 3)               Use System Sampling Values: 0
+ 4)              Sampling Interval (seconds): 360
+ 5)              Sampling Duration (seconds): 300
+ 6)                Sampling Offset (seconds): 30
+ 7)              Command Interpreter Enabled: 1
+ 8)                      Diagnostics Enabled: 0
+ 9)                    Serial Port Baud Rate: 115200
+10)                    Serial Port Data Bits: 8
+11) Serial Port Parity (0-none 1-odd 2-even): 0
+12)                    Serial Port Stop Bits: 1
+13)             Power on Before Sampling (s): 5
+14)                     Activity timeout (s): 0
+15)                 Serial Port Flow Control: 0
+16)                       Power Control Type: 0
+17)                         Service Provider: ne01.VZWSTATIC
+18)                Primary Server IP Address: 173.166.182.57
+19)           Primary Client TCP Port Number: 6171
+20)              Secondary Server IP Address: 173.166.182.57
+21)         Secondary Client TCP Port Number: 6171
+22)                              Num Retries: 3
+23)                            Reset Timeout: 30
+24)                               Context ID: 3
+
+Device 6: Wetlabs WQM (9 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 3,3
+ 3)             Use System Sampling Settings: 0
+ 4)              Sampling Interval (seconds): 360
+ 5)              Sampling Duration (seconds): 120
+ 6)                Sampling Offset (seconds): 90
+ 7)     Minimum Number Of Averaging Elements: 1
+ 8)                             Warm Up Time: 30
+ 9) Max Threshold of Dissolved Oxygen (ug/l): 20
+
+Device 9: ADC Input (15 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 3,3
+ 3)            Use System Averaging Interval: 1
+ 4)                        ADC Gain Settings: 0
+ 5)                              Sample Rate: 7
+ 6)                            Buffer Enable: 0
+ 7)                               Multiplier: -10
+ 8)                                   Offset: 0
+ 9)              Sampling Interval (seconds): 360
+10)              Sampling Duration (seconds): 360
+11)                Sampling Offset (seconds): 0
+12)     Minimum number of averaging elements: 1
+13)                        Local sample rate: 1
+14)                                     Name: 
+15)             Power on Before Sampling (s): 5
+
+Device 15: Generic Datalogger (10 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 3,3
+ 3) Device index (0=CompactFlash, 1=Internal): 0
+ 4)                    Automatic delete flag: 1
+ 5)                         Write cache size: 10240
+ 6)                        Write cache count: 10
+ 7)             Wait Time Averaging Interval: 600
+ 8)               Wait Time Averaging Offset: 600
+ 9)                    Max Wait Timeout (ms): 3000
+10)                    Max Number of Retries: 1
+
+Device 16: Generic Datalogger (10 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 3,3
+ 3) Device index (0=CompactFlash, 1=Internal): 1
+ 4)                    Automatic delete flag: 1
+ 5)                         Write cache size: 10240
+ 6)                        Write cache count: 10
+ 7)             Wait Time Averaging Interval: 600
+ 8)               Wait Time Averaging Offset: 600
+ 9)                    Max Wait Timeout (ms): 3000
+10)                    Max Number of Retries: 1
+
+Device 18: TRIAXYS OEM (17 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 3,3
+ 3)             Use System Sampling Settings: 0
+ 4)              Sampling Interval (seconds): 3600
+ 5)              Sampling Duration (seconds): 1200
+ 6)                Sampling Offset (seconds): 2100
+ 7)                  Center of Mass X Offset: 0
+ 8)                  Center of Mass Y Offset: 0
+ 9)                  Center of Mass Z Offset: 1
+10)                   Max Processing Timeout: 300
+11)                    Message Enable String: 3,3,3,0,3,0,0
+12)                Frequency Resolution (Hz): 0.005
+13)                 Low Frequency Limit (Hz): 0.03
+14)                High Frequency Limit (Hz): 0.64
+15)                 Spectral Threshold Ratio: 0.01
+16)                         MFx Message Type: 0
+17)                           Leave Power On: 0
+
+Device 19: Compass (11 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 3,3
+ 3)             Use System Sampling Settings: 0
+ 4)              Sampling Interval (seconds): 360
+ 5)              Sampling Duration (seconds): 120
+ 6)                Sampling Offset (seconds): 0
+ 7)                 Degrees = 0 and Mils = 1: 0
+ 8)                Heading Holdover(seconds): 2
+ 9)                             Damping Time: 0
+10) Damping Filter (0= Undamped;1=Single IIR;2=Sum and Dump;3=Double IIR;4=Window Averaging): 0
+11) Polled Mode Flag (0 : Auto Run ; 1 : The data must be requested by the handler): 1
+
+Device 20: Pulse Anemometer (29 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 3,3
+ 3)             Use System Sampling Settings: 0
+ 4)              Sampling Interval (seconds): 360
+ 5)              Sampling Duration (seconds): 120
+ 6)                Sampling Offset (seconds): 240
+ 7)                          Wind Model Type: 1
+ 8)              Gust Averaging Sample Count: 5
+ 9)                 Wind Averaging Algorithm: 0
+10)      Minimum Number of Averaging Samples: 1
+11)       Wind Speed Scale Factor (from m/s): 1
+12)      Wind Speed Offset Factor (from m/s): 0
+13)              Wind Direction Scale Factor: 57.29577951
+14)       Wind Direction Offset Factor (deg): 0
+15)                                Reserved1: 16
+16)               Compass Description String: 1,19,2,V
+17)           Fixed Magnetic Variation (deg): 0
+18)                                Reserved2: 16
+19)                                Reserved3: 16
+20)                                Reserved4: 16
+21)                                Baud rate: 0
+22)              ADC - ADC Dir Buffer Enable: 1
+23)                  ADC - DAC Buffer Enable: 1
+24)            ADC - ADC Speed Buffer Enable: 1
+25)                       Pulse - pulse mode: 1
+26)                Serial - Serial init mode: 1
+27)                      Wind Vane Installed: 1
+28)                     METAR Install String: 
+29)                        232/485 Mode Flag: 0
+
+Device 21: PTB100 (28 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 1,3
+ 3)             Use System Sampling Settings: 0
+ 4)              Sampling Interval (seconds): 360
+ 5)              Sampling Duration (seconds): 360
+ 6)                Sampling Offset (seconds): 0
+ 7)     Minimum Number of Averaging Elements: 1
+ 8)                    Pressure Signal Scale: 184
+ 9)                   Pressure Signal Offset: 600
+10)                               Reserved 1: 0
+11)                        ADC Buffer Enable: 1
+12)                               Reserved 2: 0
+13)         Plateau Correction Coefficient A: -0.002775
+14)         Plateau Correction Coefficient B: -0.4391
+15)         Plateau Correction Coefficient C: 4.578
+16) System Type (0: Other, 1 : AWOS , 2: AVOS): 0
+17) Average Temperature Install String (nodeID,slotID,paramID): 
+18)                           Pressure Scale: 1
+19)                          Pressure Offset: 0
+20)               Minimum Pressure Threshold: 850
+21)               Maximum Pressure Threshold: 1050
+22) Instantaneous Temperature Install String (nodeID,slotID,paramID): 
+23) Max Differential Pressure Between Intervals: 5
+24)      12 Hour Temperature History (deg C): 
+25)          Reset Maintenance Required Flag: 0
+26)                Disable Maintenance Check: 1
+27)                       Sensor Height (ft): 4
+28)                      Station Height (ft): 0
+
+Device 22: Nortek ADCP (25 parameters)
+ 1)                           Device Enabled: 1
+ 2)                    Device View,Log Level: 3,3
+ 3)             Use System Sampling Settings: 0
+ 4)              Sampling Interval (seconds): 360
+ 5)              Sampling Duration (seconds): 330
+ 6)                Sampling Offset (seconds): 15
+ 7)     Minimum Number of Averaging Elements: 1
+ 8)                           Velocity Scale: 1
+ 9)                          Velocity Offset: 0
+10)                       Cell Select String: 1,2,3,4,5,6,7,8,9,10
+11)                           Analog 1 Scale: 1
+12)                          Analog 1 Offset: 0
+13)                           Analog 2 Scale: 1
+14)                          Analog 2 Offset: 0
+15)                Transducer Head Depth (m): 0.48
+16)                    Blanking Distance (m): 1.23
+17)                            Cell Size (m): 1
+18)                              Orientation: 0
+19)                                Baud Rate: 9600
+20)                    Use internal Recorder: 0
+21)                           Auto Init Flag: 0
+22)                          Number of Cells: 20
+23)                              Power Level: 3
+24)                           Speed Of Sound: 0
+25)                       Set Clock Interval: 86400
+
+********* FLASH PARTITION INFO ********
+Active Partition ID = 1
+ ----- Firmware 1 (Partition ID 0) -----
+  Sys version: 424027 -  1.28
+   FW version: 1.09.0088
+    FW config: ARM_GCC4_1_HWRev5_2MB_FAT_release
+   Build date: Apr 24, 2018 - 18:24:21
+     Checksum: 2471523302
+        Start: 0x01030000
+ Total length: 524288 (512.0 kB)
+  Data length: 455957 (445.3 kB)
+  Destination: 0x02004000
+      Execute: 0x02004040
+ ----- Firmware 2 (Partition ID 1) -----
+  Sys version: 424027 -  1.28
+   FW version: 1.09.0088
+    FW config: ARM_GCC4_1_HWRev5_2MB_FAT_release
+   Build date: Apr 24, 2018 - 18:24:21
+     Checksum: 2471523302
+        Start: 0x010B0000
+ Total length: 524288 (512.0 kB)
+  Data length: 455957 (445.3 kB)
+  Destination: 0x02004000
+      Execute: 0x02004040
+ ----- Temporary Firmware Area (Partition ID 2) -----
+     Checksum: 0
+        Start: 0x01130000
+ Total length: 524288 (512.0 kB)
+  Data length: 0 (0.0 kB)
+  Destination: 0x00000000
+      Execute: 0x00000000
+ ----- EEPROM Area 1 (Partition ID 3) -----
+     Checksum: 986709997
+        Start: 0x011B0000
+ Total length: 65536 (64.0 kB)
+  Data length: 32638 (31.9 kB)
+  Destination: 0x00000000
+      Execute: 0x00000000
+ ----- EEPROM Area 2 (Partition ID 4) -----
+     Checksum: 3908374519
+        Start: 0x011C0000
+ Total length: 65536 (64.0 kB)
+  Data length: 32638 (31.9 kB)
+  Destination: 0x00000000
+      Execute: 0x00000000
+ ----- Temporary EEPROM Area (Partition ID 5) -----
+     Checksum: 0
+        Start: 0x011D0000
+ Total length: 65536 (64.0 kB)
+  Data length: 0 (0.0 kB)
+  Destination: 0x00000000
+      Execute: 0x00000000
+ ----- Datalogging Area (Partition ID 6) -----
+     Checksum: 0
+        Start: 0x011E0000
+ Total length: 1966080 (1920.0 kB)
+  Data length: 0 (0.0 kB)
+  Destination: 0x00000000
+      Execute: 0x00000000
+
+********* ADC CALIBRATION INFO ********
+ADC Calibration Node : 1
+520b001e45259081
+A01P11C01S111W1M2B0T0N1E1
+111018112705
+5.9603258136337e-07,2.54939469401805e-06
+5.96034431982789e-07,-2.34017597064984e-05
+5.96031228339755e-07,1.52522642293818e-06
+5.96030430469028e-07,-1.12592383212373e-05
+5.96025757671912e-07,1.62141337338717e-05
+5.96026067370351e-07,-4.03038060614591e-06
+5.96026709135312e-07,1.32225764502003e-05
+5.96020424128906e-07,1.78073240353349e-05
+1.1889312335168e-06,-2.49297776722626
+1.19397536029274e-06,-2.51421762426023
+1.18892920503666e-06,-2.49297493715597
+1.19397470180689e-06,-2.51423062025086
+1.18892813898915e-06,-2.49297419783268
+1.1939603477702e-06,-2.51416566352405
+1.18893013043816e-06,-2.49297350678659
+1.19397304630579e-06,-2.51420450879286
+5.96067161651998e-07,-0.000167395532451486
+5.96062277534056e-07,-0.000178890066310444
+5.96062819195972e-07,-0.000156318483726992
+5.960676489031e-07,-0.000190595743982502
+5.96060784914615e-07,-0.000179930411640772
+5.960623259115e-07,-0.000187675279519794
+5.96061135846827e-07,-0.000170171299139987
+5.96058748216372e-07,-0.000174177279372412
+1.18909293880074e-06,0.0105952381570937
+1.19410525825212e-06,-0.0106161015168349
+1.1890828354933e-06,0.0105922800156776
+1.19409247638342e-06,-0.0106065324383431
+1.18908848175985e-06,0.0105984345776776
+1.19410168197296e-06,-0.0106110620962914
+1.18909575235301e-06,0.0105914667259944
+1.1941012433527e-06,-0.010606630917373
+2359748765
+
+
+*************** MESSAGES **************
+Message 1 Configuration:
+ 1 - Message Name
+  Value: Status
+ 2 - Enabled
+  Value: 1
+ 3 - Output Interval
+  Value: 360
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value:  
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: 1,15,MSG_1 [TIMESTAMPED]
+ 9 - Message logger ID 2: 1,16,MSG_1 [TIMESTAMPED]
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 0
+18 - Communication Device 1: 1,5
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01     | System | ---- |          07 |         F1 |           V0 | User System Superstructure ID
+F02     |      1 |   02 |          12 |         F1 |           V1 | Position Status (0-off position, 1-on position)
+F03     |      1 |   00 |          09 |         F1 |           V1 | Instantaneous Voltage (V)
+F04     |      1 |   09 |          02 |         F1 |           V1 | Instantaneous Reading
+F05     |      1 |   00 |          10 |         F1 |           V1 | Core Current (A)
+F06     |      1 |   15 |          09 |         F1 |           V1 | Error count
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 2 Configuration:
+ 1 - Message Name
+  Value: Met
+ 2 - Enabled
+  Value: 1
+ 3 - Output Interval
+  Value: 360
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value:  
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: 1,15,MSG_2 [TIMESTAMPED]
+ 9 - Message logger ID 2: 1,16,MSG_2 [TIMESTAMPED]
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 0
+18 - Communication Device 1: 1,5
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01     | System | ---- |          02 |         F1 |           V1 | System Serial Number
+F02     | System | ---- |          06 |         F1 |           V1 | User System ID Name
+F03     |      1 |   02 |          05 |         F1 |           V1 | Current Position Latitude
+F04     |      1 |   02 |          06 |         F1 |           V1 | Current Position Longitude
+F05     |      1 |   20 |          06 |         F1 |           V1 | Average wind speed
+F06     |      1 |   20 |          08 |         F1 |           V1 | Current interval gust speed
+F07     |      1 |   20 |          07 |         F1 |           V1 | Average wind direction
+F08     |      1 |   03 |          06 |         F1 |           V1 | Average Air Temperature (C)
+F09     |      1 |   03 |          08 |         F1 |           V1 | Average Humidity (%)
+F10     |      1 |   03 |          07 |         F1 |           V1 | Average Dew Point (C)
+F11     |      1 |   21 |          04 |         F1 |           V1 | Average Pressure (mb)
+F12     |      1 |   19 |          03 |         F1 |           V1 | Average Heading
+F13     |      1 |   20 |          04 |         F1 |           V1 | Last sampling interval gust speed
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 3 Configuration:
+ 1 - Message Name
+  Value: Water Quality
+ 2 - Enabled
+  Value: 1
+ 3 - Output Interval
+  Value: 360
+ 4 - Output Offset
+  Value: 360
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value:  
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: 1,15,MSG_3 [TIMESTAMPED]
+ 9 - Message logger ID 2: 1,16,MSG_3 [TIMESTAMPED]
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 0
+18 - Communication Device 1: 1,5
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01     |      1 |   06 |          15 |         F1 |           V1 | Average Salinity
+F02     |      1 |   06 |          07 |         F1 |           V1 | Average Conductivity
+F03     |      1 |   06 |          06 |         F1 |           V1 | Average Temperature
+F04     |      1 |   06 |          18 |         F1 |           V1 | Average Chlorophyll Fluorescence
+F05     |      1 |   06 |          20 |         F1 |           V1 | Average Nephelometric Turbidity Unit (NTU)
+F06     |      1 |   06 |          11 |         F1 |           V1 | Average Pressure
+F07     |      1 |   06 |          12 |         F1 |           V1 | Average Depth
+F08     |      1 |   06 |          08 |         F1 |           V1 | Average Oxygen Saturation (ml/l)
+F09     |      1 |   06 |          26 |         F1 |           V1 | Average Dissolved Oxygen (ug/l)
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 4 Configuration:
+ 1 - Message Name
+  Value: Waves
+ 2 - Enabled
+  Value: 1
+ 3 - Output Interval
+  Value: 3600
+ 4 - Output Offset
+  Value: 3600
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value:  
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: 1,15,MSG_4 [TIMESTAMPED]
+ 9 - Message logger ID 2: 1,16,MSG_4 [TIMESTAMPED]
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 0
+18 - Communication Device 1: 1,5
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01     |      1 |   18 |          06 |         F1 |           V1 | HAvg - Average Wave Height (m)
+F02     |      1 |   18 |          07 |         F1 |           V1 | Tz-mean spectral period (seconds)
+F03     |      1 |   18 |          08 |         F1 |           V1 | Hmax - Maximum Wave Height (m)
+F04     |      1 |   18 |          09 |         F1 |           V1 | Hsig - Significant Wave Height (m)
+F05     |      1 |   18 |          14 |         F1 |           V1 | TP - Peak Period (seconds)
+F06     |      1 |   18 |          17 |         F1 |           V1 | Mean Wave Direction (deg)
+F07     |      1 |   18 |          18 |         F1 |           V1 | Mean Spread (deg)
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 5 Configuration:
+ 1 - Message Name
+  Value: Nortek
+ 2 - Enabled
+  Value: 1
+ 3 - Output Interval
+  Value: 360
+ 4 - Output Offset
+  Value: 360
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value:  
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: 1,15,MSG_5 [TIMESTAMPED]
+ 9 - Message logger ID 2: 1,16,MSG_5 [TIMESTAMPED]
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 0
+18 - Communication Device 1: 1,5
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01     |      1 |   22 |          02 |         F1 |           V1 | Average Timestamp
+F02     |      1 |   22 |          03 |         F1 |           V1 | Sensor Data String
+F03     |      1 |   22 |          13 |         F1 |           V1 | Compass Heading (Deg)
+F04     |      1 |   22 |          14 |         F1 |           V1 | Compass Pitch (Deg)
+F05     |      1 |   22 |          15 |         F1 |           V1 | Compass Roll (Deg)
+F06     |      1 |   22 |          19 |         F1 |           V1 | Cell 1 Velocity Magnitude (East Coordinate) (mm/s)
+F07     |      1 |   22 |          20 |         F1 |           V1 | Cell 1 Velocity Magnitude (North Coordinate) (mm/s)
+F08     |      1 |   22 |          21 |         F1 |           V1 | Cell 1 Velocity Magnitude (Up Coordinate) (mm/s)
+F09     |      1 |   22 |          22 |         F1 |           V1 | Cell 1 Velocity Magnitude (mm/s)
+F10     |      1 |   22 |          23 |         F1 |           V1 | Cell 1 Velocity Direction (deg)
+F11     |      1 |   22 |          27 |         F1 |           V1 | Cell 1 Average Velocity Magnitude (mm/s)
+F12     |      1 |   22 |          28 |         F1 |           V1 | Cell 1 Average Velocity Direction (deg)
+F13     |      1 |   22 |          55 |         F1 |           V1 | Average Temperature (C)
+F14     |      1 |   22 |          18 |         F1 |           V1 | Temperature (0.01 Celsius)
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 6 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 7 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 8 Configuration:
+ 1 - Message Name
+  Value: Modem Stats
+ 2 - Enabled
+  Value: 1
+ 3 - Output Interval
+  Value: 360
+ 4 - Output Offset
+  Value: 360
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: 1,15,MSG_8 [TIMESTAMPED]
+ 9 - Message logger ID 2: 1,16,MSG_8 [TIMESTAMPED]
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 0
+18 - Communication Device 1: 1,5
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01     |      1 |   05 |          01 |         F1 |           V1 | Bytes Sent
+F02     |      1 |   05 |          02 |         F1 |           V1 | Bytes Received
+F03     |      1 |   05 |          03 |         F1 |           V1 | Device Status
+F04     |      1 |   05 |          04 |         F1 |           V1 | RSSI
+F05     |      1 |   05 |          05 |         F1 |           V1 | Bit Error Rate
+F06     |      1 |   05 |          06 |         F1 |           V1 | Cell IP
+F07     |      1 |   05 |          07 |         F1 |           V1 | Error State
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 9 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 10 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 11 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 12 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 13 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 14 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 15 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 16 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 17 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 18 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 19 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 20 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 21 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 22 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 23 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 24 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 25 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 26 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 27 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 28 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 29 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
+
+Message 30 Configuration:
+ 1 - Message Name
+  Value: Not Assigned
+ 2 - Enabled
+  Value: 0
+ 3 - Output Interval
+  Value: 1
+ 4 - Output Offset
+  Value: 0
+ 5 - Message Subtype
+   NMEA Messages:
+    0 = DMSData w BeginTime
+    1 = DMSData
+    2 = DMSData NMEAField
+    3 = DMSData BinaryField
+    4 = CustNMEA w Date/Time
+    5 = CustNMEA w Time w BeginTime
+    6 = CustNMEA
+    7 = DMSData w MidTime
+    8 = No Header or Checksum
+   Binary Messages:
+    0 = Raw
+    1 = AXYS Encoded
+   Value: 1
+ 6 - Custom NMEA Header
+  Value: 
+ 7 - Number of Transmits
+  Value: 1
+ 8 - Message logger ID 1: <disabled>
+ 9 - Message logger ID 2: <disabled>
+10 - Message logger ID 3: <disabled>
+11 - Message logger ID 4: <disabled>
+12 - Message logger ID 5: <disabled>
+13 - Transmit Delay
+  Value: 0
+14 - Transmit Interval
+  Value: 1
+15 - Random Time Within Interval Flag
+  Value: 0
+16 - Enable Action Script Delayed Messaging
+  Value: 0
+17 - Use All Communication Devices
+  Value: 1
+18 - Communication Device 1: <disabled>
+19 - Communication Device 2: <disabled>
+20 - Communication Device 3: <disabled>
+21 - Communication Device 4: <disabled>
+22 - Communication Device 5: <disabled>
+23 - Message Type
+  Value: 0 [NMEA]
+
+FieldID | NodeID | Slot | ParameterID | FormatFlag | ValidateFlag | Name
+--------+--------+------+-------------+------------+--------------+--------------
+F01 - Field Not Enabled
+F02 - Field Not Enabled
+F03 - Field Not Enabled
+F04 - Field Not Enabled
+F05 - Field Not Enabled
+F06 - Field Not Enabled
+F07 - Field Not Enabled
+F08 - Field Not Enabled
+F09 - Field Not Enabled
+F10 - Field Not Enabled
+F11 - Field Not Enabled
+F12 - Field Not Enabled
+F13 - Field Not Enabled
+F14 - Field Not Enabled
+F15 - Field Not Enabled
+F16 - Field Not Enabled
+F17 - Field Not Enabled
+F18 - Field Not Enabled
+F19 - Field Not Enabled
+F20 - Field Not Enabled
+F21 - Field Not Enabled
+F22 - Field Not Enabled
+F23 - Field Not Enabled
+F24 - Field Not Enabled
+F25 - Field Not Enabled
+F26 - Field Not Enabled
+F27 - Field Not Enabled
+F28 - Field Not Enabled
+F29 - Field Not Enabled
+F30 - Field Not Enabled
+F31 - Field Not Enabled
+F32 - Field Not Enabled
+F33 - Field Not Enabled
+F34 - Field Not Enabled
+F35 - Field Not Enabled
+F36 - Field Not Enabled
+F37 - Field Not Enabled
+F38 - Field Not Enabled
+F39 - Field Not Enabled
+F40 - Field Not Enabled
+F41 - Field Not Enabled
+F42 - Field Not Enabled
+F43 - Field Not Enabled
+F44 - Field Not Enabled
+F45 - Field Not Enabled
+F46 - Field Not Enabled
+F47 - Field Not Enabled
+F48 - Field Not Enabled
+F49 - Field Not Enabled
+F50 - Field Not Enabled
+F51 - Field Not Enabled
+F52 - Field Not Enabled
+F53 - Field Not Enabled
+F54 - Field Not Enabled
+F55 - Field Not Enabled
+F56 - Field Not Enabled
+F57 - Field Not Enabled
+F58 - Field Not Enabled
+F59 - Field Not Enabled
+F60 - Field Not Enabled
+--------------------
