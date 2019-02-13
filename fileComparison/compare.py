@@ -36,6 +36,7 @@ looking for the text in the right file
 """
 def findInLeft(fileName1, fileName2):
 
+    # Found a bug and fixed it
     notInRight = list()
     with open(fileName1) as fp:  
        line = fp.readline()
@@ -50,7 +51,7 @@ def findInLeft(fileName1, fileName2):
            if dubMatch:
                # print("Double match:::",aLine)
                # Skip lines that contain two doubles
-               pass
+              pass
            else:
                if not findLineInFile(fileName2,aLine):
                    notInRight.append(aLine)
