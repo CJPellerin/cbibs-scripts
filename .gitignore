@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# CBIBS Stuff
+**/sensitiveInfo.txt
+
 # C extensions
 *.so
 
