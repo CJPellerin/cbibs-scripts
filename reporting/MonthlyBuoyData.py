@@ -10,7 +10,7 @@ This is a python program that reads data from the CBIBS PostgreSQL database and 
 # Importations
 import credentials
 import pickle
-import datetime
+from datetime import datetime
 import os
 from psycopg2 import connect, sql, Error
 from pathlib import Path # requires python 3.4 and up
@@ -18,10 +18,10 @@ from pathlib import Path # requires python 3.4 and up
 # Constants for running the script
 dtFileFormat="%Y_%m_%d_%H_%m"
 dtQueryFormat="%Y-%m-%d %H:%M:%S"
-startDTString = '2019-05-18 00:00:00'
+startDTString = '2019-06-18 00:00:00'
 stopDTString = '2019-06-19 00:00:00'
 stations = ['YS','FL','SR','PL','GR','AN','J']
-outputDir ="pickles" # you will need to change this for your local path
+pickleDir ="pickles" # you will need to change this for your local path
 
 def getConnString():
     host="host='"+credentials.host+"' "
@@ -60,10 +60,10 @@ def getQuery(station, startTime, stopTime):
 def getPicklePath(station, startDT):
     # Here i've used the date of the meeting to makr the files, there is a better way.
     outputName = station + '_' + startDT.strftime(dtFileFormat) + '.pkl'
-    if not os.path.exists(outputDir):
-        print("Directory " + outputDir + " does not exist, creating")
-        os.makedirs(outputDir)
-    outputString = outputDir + os.sep + outputName
+    if not os.path.exists(pickleDir):
+        print("Directory " + pickleDir + " does not exist, creating")
+        os.makedirs(pickleDir)
+    outputString = pickleDir + os.sep + outputName
     return outputString
 
 def debugSqlOutput(contents):

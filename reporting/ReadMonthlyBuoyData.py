@@ -124,7 +124,7 @@ ax = plt.subplot()
 # plot the data by day of the year, a little easier than screwing with datetimes
 # plot the date in a date referenced frame
 # dates = mdates.date2num(paramSet[0])
-ax.plot_date(x,y,'bo') #,markeredgecolor='b')
+ax.plot_date(x,y,'bo',markeredgecolor='b',markersize=2)
 #ax.plot_date(mTime[ind[good]],tdat[good],'bo',markeredgecolor='b')
 #ax.plot_date(mTime[ind[bad]],tdat[bad],'ro',markeredgecolor='r')
 #ax.plot_date(mTime[ind[suspect]],tdat[suspect],'go',markeredgecolor='g')
