@@ -7,12 +7,14 @@ Created on Mon Feb 11 13:19:53 2019
 
 # Import the regular expression library
 import re
+
 #Andy messed with this file but only by way of this comment
 # Here is another comment for testing
 
 """
 Given a filename and a line of text search the file to find if it exists
 """
+dlfldsjfsldjfflkdsfdklsdj
 def findLineInFile(fileName, text):
     # Open file and read contents
     with open(fileName) as fp:  
