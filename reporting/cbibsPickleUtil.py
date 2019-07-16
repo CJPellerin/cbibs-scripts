@@ -45,6 +45,33 @@ def getGraphDataSet(pickleData):
         filtered.append([line[1], line[2]])        
     return filtered
 
+# Read the entire pickle file and filter on the variable to graph
+def getGraphQcDataSet(pickleData):
+    good=0
+    notEval=0
+    suspect=0
+    bad=0
+    missing=0
+    unknown=0
+    for lineNum in range(np.shape(pickleData)[0]):
+        line = pickleData[lineNum]        
+        if line[5] == 1:
+            good += 1
+        elif line[5] == 2:
+            notEval  +=1
+        elif line[5] == 3:
+            suspect +=1
+        elif line[5] == 4:
+            bad +=1
+        elif line[5] == 9:
+            missing+=1
+        else:
+            unknown += 1
+            
+        if unknown >0:
+            print('WARNING, found {} unknown QC'.format(unknown))
+    return [good, bad, notEval, suspect, missing]
+
 # Sort the data by date
 def sortData(unsortedArray):
     # sortedArray = sorted(unsortedArray, key=lambda x: datetime.strptime(x[0], '%m/%d/%y %H:%M'), reverse=True)

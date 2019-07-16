@@ -18,8 +18,8 @@ import cbibsFileUtil
 
 # Constants for running the script
 dtQueryFormat="%Y-%m-%d %H:%M:%S"
-startDTString = '2019-06-18 00:00:00'
-stopDTString = '2019-06-19 00:00:00'
+startDTString = '2019-05-15 00:00:00'
+stopDTString = '2019-06-15 00:00:00'
 stations = ['YS','FL','SR','PL','GR','AN','J']
 pickleDir ="pickles" # you will need to change this for your local path
 

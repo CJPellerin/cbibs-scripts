@@ -28,7 +28,7 @@ pickleDir ="pickles" # you will need to change this for your local path
 # remember that pickles load straight into memory, so leave enough room for that or yuo'll get paging
 # Just specify the station, this will pick up the latest file for that station
 station='YS'
-parameter='sea_water_temperature'
+# parameter='sea_water_temperature'
 parameter='air_temperature'
 dtQueryFormat="%Y-%m-%d %H:%M:%S"
 
@@ -71,6 +71,7 @@ for line in paramSet:
   
 
 style.use('ggplot')
+
 fig = plt.figure(parameter)
 ax = plt.subplot()
 

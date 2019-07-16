@@ -25,8 +25,15 @@ def getFilePath(fileDir):
 def getMostRecentStationFile(fileDir, station, suffux):
     pickleLocalDir = getFilePath(fileDir)
     allPickles = pickleLocalDir + station + '_*' + suffux
-    stationPickle = min(glob.glob(allPickles),key=os.path.getctime )
+    stationPickle = max(glob.glob(allPickles),key=os.path.getctime )
     return stationPickle    
+
+# Get the newest pickle file that starts with the name of the station
+def getAllFiles(fileDir, suffux):
+    pickleLocalDir = getFilePath(fileDir)
+    allPickles = pickleLocalDir + '*_*' + suffux
+    stationPickle = glob.glob(allPickles)
+    return stationPickle   
 
 # get the name of a file, create the directory if it doesn't exist
 def createCbibsFile(stationName, pickleDir,  startDT, suffux):
