@@ -8,6 +8,8 @@ Created on Mon Jul 15 16:01:02 2019
 
 import os
 import glob
+from pathlib import Path
+
 
 dtFileFormat="%Y_%m_%d_%H_%m"
 
@@ -44,3 +46,24 @@ def createCbibsFile(stationName, pickleDir,  startDT, suffux):
         os.makedirs(pickleDir)
     outputString = pickleDir + os.sep + outputName
     return outputString
+
+
+def createCsvFile(csvFile, paramSet):
+    # Check to see if the file exists, we want one csv per buoy
+    if Path(csvFile).is_file():
+         print('This file exists, appending ... ')
+         f = open(csvFile,"a")
+    else:
+        print('creating new file ... ')
+        f = open(csvFile,"w+")
+            
+            
+    for line in paramSet:
+        # Uncomment if you want to see the output as it writes
+        # print(line)
+        outputLine = str(line[0]) +','+ str(line[1]) +','+ str(line[2]) +',' \
+        + str(line[3]) +','+ str(line[4]) +','+ str(line[5]) + ',' + str(line[6]) +',' \
+        + str(line[7]) +','+ str(line[8]) +','+ str(line[9]) + '\n'
+        f.write(outputLine)    
+    
+    f.close()
