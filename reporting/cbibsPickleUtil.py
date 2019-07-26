@@ -82,4 +82,4 @@ def getUnits(contents):
     return contents[0][6]
 
 def getFirstDate(contents):
-    return contents[0][1]
+    return contents[0][0]

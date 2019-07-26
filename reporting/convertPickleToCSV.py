@@ -21,7 +21,8 @@ csvDateFormat="%Y-%m-%d %H:%M:%S"
 # remember that pickles load straight into memory, so leave enough room for that or yuo'll get paging
 # Just specify the station, this will pick up the latest file for that station
 stationName='YS'
-parameter='sea_water_temperature'
+# parameter='sea_water_temperature'
+parameter='all'
 
 
 
@@ -33,6 +34,8 @@ contents = cbibsPickleUtil.readPickleFile(stationFile)
 
 dataShape = np.shape(contents)
 print("Pickle has {} rows".format(dataShape[0]))
+
+print(contents[0][0])
 
 # Filter and then sort the data
 paramSet = cbibsPickleUtil.filterOnVariable(contents, parameter)
@@ -61,7 +64,8 @@ else:
         
         
 for line in paramSet:
-    print(line)
+    # Uncomment if you want to see the output as it writes
+    # print(line)
     outputLine = str(line[0]) +','+ str(line[1]) +','+ str(line[2]) +',' \
     + str(line[3]) +','+ str(line[4]) +','+ str(line[5]) + ',' + str(line[6]) +',' \
     + str(line[7]) +','+ str(line[8]) +','+ str(line[9]) + '\n'
