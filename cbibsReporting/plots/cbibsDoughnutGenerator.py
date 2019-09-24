@@ -8,7 +8,7 @@ class cbibsDoughnutGenerator():
     SUSPECT = "Questionable or Suspect"
     BAD = "BAD"
     MISSING = "MISSING"
-      
+    EMPTY = "Empty"
       
     # Iterate over measurements and get the QC into an array
     def getGraphQcDataSet(self, measures):
@@ -51,6 +51,21 @@ class cbibsDoughnutGenerator():
         
         return qcValues    
    
+    def getGraphColor(self, aName):
+        color = "gray"
+        if aName == "Good":
+            color = "green"
+        elif aName == "Bad":
+            color = "red"
+        elif aName == "Not Evaluated":
+            color = "orange"
+        elif aName == "Suspect":
+            color = "yellow"
+        elif aName == "Missing":
+            color = "cyan"    
+        print ("Getting color " + aName)
+        return color
+    
     def getDataToPlot(self, station, varActualName):
         return station.getDataToPlot(varActualName)
     
@@ -81,7 +96,7 @@ class cbibsDoughnutGenerator():
         paramSet = self.getGraphQcDataSet(fullArray)
         varReportName = shortName + "-"+ longName
         varReportName +=  " ({} measures".format(len(fullArray))+")"
-        myPlot = cbibsDP.makePlot(paramSet, varReportName)
+        myPlot = cbibsDP.makePlot(self, paramSet, varReportName)
         myPlot.show()
         
         

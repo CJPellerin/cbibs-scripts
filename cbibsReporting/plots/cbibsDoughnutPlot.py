@@ -3,6 +3,8 @@
 import matplotlib.pyplot as pyplot
 import numpy as np
 
+from plots.cbibsDonutVo import cbibsDonutVo
+
 class cbibsDoughnutPlot():
     
     #def __init__(self):
@@ -20,47 +22,39 @@ class cbibsDoughnutPlot():
          
         return labels
     
-    def createColorMap(self, paramSet):
+    # Use the type to get a color for the graph
+    def makePlot(self, parent, paramSet, varReportName):
+        mapVos = [];
+        totalCount = 0
+        for name in paramSet.keys():
+            print (name)
+            vo = cbibsDonutVo(paramSet[name],name)
+            totalCount+= paramSet[name]
+            print(vo)
+            mapVos.append(vo)
+        
+        # Sort the objects based on key        
+        mapVos.sort(key=lambda x: x.count, reverse=True)
+        print(mapVos)
+        
+        x = []
+        y = []
+        labels = []
         colorMap = []
-        for val in paramSet.keys():
-            if val == "Good":
-                colorMap.append("green")
-            elif val == "Bad":
-                colorMap.append("red")
-            elif val == "Not Evaluated":
-                colorMap.append("orange")
-            elif val == "Suspect":
-                colorMap.append("yellow")
-            elif val == "Missing":
-                colorMap.append("cyan")
-            elif val == "Empty":
-                colorMap.append("gray")
-        return colorMap     
-        
-    def makePlot(self, paramSet, varReportName):
-        # Use custom colors for the text based labels
-        colorMap = self.createColorMap(paramSet)        
-
-        # Create a numpy array for x
-        xlist = [[(k)] for k in paramSet.keys()]
-        x = np.char.array(xlist)
-        
-        # Same for y
-        alist = [int(k) for k in paramSet.values()]
-        y = np.array(alist)
-        
-        labels = self.createLabelForLegend(paramSet,colorMap,x,y)
-
-        colorMap, labels, dummy =  zip(*sorted(zip(colorMap, labels, y), \
-                                               key=lambda x: x[2],\
-                                               reverse=True))
-          
+        # Now I have a sorted list, create the graphing data
+        for mapVo in mapVos:
+             labels.append(mapVo.getLabel(totalCount))
+             x.append(mapVo.count)
+             y.append(mapVo.name)
+             # Use custom colors for the text based labels
+             colorMap.append(parent.getGraphColor(mapVo.name))
+    
         fig1, ax1 = pyplot.subplots()
 
 
         # startangle is where to start the values, 90 is the top
         # autopct='%1.1f%%', will make automatic percentages, but they overlap
-        ax1.pie(paramSet.values(), colors=colorMap,  labeldistance=1.45, \
+        ax1.pie(x, colors=colorMap,  labeldistance=1.45, \
                 shadow=False, startangle=90)
         # ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
         fig1 = pyplot.gcf() 

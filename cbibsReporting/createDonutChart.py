@@ -16,7 +16,7 @@ print("Starting to plot the QC\n")
 # plt.close('all')
 
 # Data set up for plotting
-stationName='PL'
+stationName='GR'
 varActualName='sea_water_temperature'
 # varActualName='battery_volts'
 #varActualName='relative_humidit'

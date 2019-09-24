@@ -20,12 +20,12 @@ print("Starting a line plot\n")
 # plt.close('all')
 
 # Data set up for plotting
-stationName='SR'
-#varActualName='sea_water_temperature'
-varActualName='battery_volts'
+stationName='FL'
+varActualName='sea_water_temperature'
+#varActualName='battery_volts'
 #varActualName='relative_humidity'
 endDate = datetime.datetime.now( pytz.UTC)
-startDate = endDate - datetime.timedelta(days=30)
+startDate = endDate - datetime.timedelta(days=14)
 
 # Get the data using the API
 station = CbibsStationJsonMgr.getStationReadings(stationName, varActualName, startDate, endDate)
