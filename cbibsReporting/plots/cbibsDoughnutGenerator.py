@@ -59,9 +59,10 @@ class cbibsDoughnutGenerator():
         # fill the empty array
         for actualMess in measures:
             item = self.findItem(emptyArray, actualMess.time)
-            item.time = actualMess.time
-            item.value = actualMess.value
-            item.qa = actualMess.qa
+            if item != None:
+                item.time = actualMess.time
+                item.value = actualMess.value
+                item.qa = actualMess.qa
     
     def findItem(self, emptyArray, time):
        
