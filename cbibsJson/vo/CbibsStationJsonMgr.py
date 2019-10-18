@@ -13,7 +13,7 @@ import pytz
 from cbibsJson.vo.CbibsStation import CbibsStation
 from cbibsJson.vo.CbibsVariable import CbibsVariable
 from cbibsJson.vo.CbibsMeasurement import CbibsMeasurement
-
+import matplotlib.dates as mdates
 class CbibsStationJsonMgr():
     
     @staticmethod
@@ -96,6 +96,18 @@ class CbibsStationJsonMgr():
         print("StartDate {}, EndDate {}, interval {} ".format(startDate, endDate, interval))
         return emptyArray
  
+    
+    @staticmethod
+    def getEmptyTimeArrayRange(sampleMeasurement, interval, startDate, endDate):
+        """ Use the mat lab dates function instead of a loop to make the array
+        Use this to test the speed difference"""
+        newStartTime = CbibsStationJsonMgr.getStartDate(sampleMeasurement, startDate, interval)
+        endDate = endDate.replace(tzinfo=pytz.utc)
+        
+        # Generate a series of dates (these are in matplotlib's internal date format)
+        emptyArray = mdates.drange(newStartTime,endDate, datetime.timedelta(minutes=(interval/60)))    
+        return emptyArray
+    
     
     @staticmethod
     def getStartDate(sampleMeasurement, startDate, interval):
