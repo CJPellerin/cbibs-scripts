@@ -6,7 +6,7 @@ __pycache__/
 # CBIBS Stuff
 **/credentials.py
 **/credentials*.py
-
+**/reporting/pickles*
 # C extensions
 *.so
 
