@@ -11,11 +11,11 @@ import glob
 from pathlib import Path
 
 
+# The date format used to write out files
 dtFileFormat="%Y_%m_%d_%H_%m"
 
 # Get the directory containing pickle files
-def getFilePath(fileDir):
-    # Here i've used the date of the meeting to makr the files, there is a better way.
+def getFilePath(fileDir):    
     if not os.path.exists(fileDir):
         print("Directory " + fileDir + " does not exist, exiting")
         # Optional, create the dir if not found?
@@ -30,7 +30,7 @@ def getMostRecentStationFile(fileDir, station, suffux):
     stationPickle = max(glob.glob(allPickles),key=os.path.getctime )
     return stationPickle    
 
-# Get the newest pickle file that starts with the name of the station
+# Get all of the files in the directory.
 def getAllFiles(fileDir, suffux):
     pickleLocalDir = getFilePath(fileDir)
     allPickles = pickleLocalDir + '*_*' + suffux
